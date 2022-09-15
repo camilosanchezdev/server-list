@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, Navigate, useLocation, Outlet } from "react-router-dom";
+import { Routes, Route, Navigate, useLocation, Outlet, HashRouter } from "react-router-dom";
 import Layout from './containers/Layout';
 import Dashboard from './pages/Dashboard';
 import Home from './pages/Home';
@@ -24,7 +24,7 @@ const queryClient = new QueryClient()
 function App() {
   return (
     <QueryClientProvider client={queryClient}>
-      <BrowserRouter>
+      <HashRouter>
         <Layout>
           <Routes>
             <Route element={<ValidateRoutes />}>
@@ -36,7 +36,7 @@ function App() {
             <Route path="*" element={<Home />} />
           </Routes>
         </Layout>
-      </BrowserRouter>
+      </HashRouter>
     </QueryClientProvider>
   );
 }
