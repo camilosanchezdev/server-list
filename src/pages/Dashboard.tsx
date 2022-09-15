@@ -74,7 +74,7 @@ const Dashboard = () => {
             applyPagination(data, currentPage, pageSize)
             setOrdererResults(data)
         }
-    }, [data, currentPage, pageSize])
+    }, [data, currentPage, pageSize, ordererResults])
 
     return (
         <>
