@@ -59,7 +59,7 @@ const Home = () => {
                             <input type="text" name="username" placeholder="Username" className="form-control p-3 at-icon" value={body.username} onChange={(e: ChangeEvent<HTMLInputElement>) => setBody({ ...body, username: e.target.value })} />
                         </div>
                         <div className="my-2">
-                            <input id="test1" type="password" name="password" placeholder="Password" className="form-control p-3 lock-icon" onChange={(e: ChangeEvent<HTMLInputElement>) => setBody({ ...body, password: e.target.value })} value={body.password} />
+                            <input type="password" name="password" placeholder="Password" className="form-control p-3 lock-icon" onChange={(e: ChangeEvent<HTMLInputElement>) => setBody({ ...body, password: e.target.value })} value={body.password} />
                         </div>
                         {error && <div className="p-4 mb-4 text-sm text-red-700 bg-red-100 rounded-lg dark:bg-red-200 dark:text-red-800" role="alert">
                             <span className="font-medium w-full">Wrong Credentials.</span> Invalid username or password.
