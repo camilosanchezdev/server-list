@@ -14,8 +14,8 @@ const Home = () => {
     const dispatch = useDispatch();
 
     const [body, setBody] = useState({
-        username: '',
-        password: ''
+        username: 'tesonet',
+        password: 'partyanimal'
     })
     const handleLogin = async (e: FormEvent) => {
         e.preventDefault()
